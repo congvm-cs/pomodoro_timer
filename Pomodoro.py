@@ -43,7 +43,6 @@ while True:
     # Relax phase
     print('-------------------------------------------------------------------')
     # Compute breaking time
-    print(SET_RELAXING_TIMER*60)
     t += datetime.timedelta(seconds=SET_RELAXING_TIMER*60)
     relaxing_period = str(t).split()[1].split(':')
     print('Relax until {}:{}:{:02d}'.format(relaxing_period[0], relaxing_period[1], int(float(relaxing_period[2])//10)))
